@@ -208,11 +208,11 @@
           <h3 class="text-center text-3xl text-black font-extrabold mt-24">Program Sections</h3>
           <p class="text-center text-inherit font-medium text-base leading-7 mt-7 mb-20 mx-2">The Program Section showcases hockey events, schedules, and training programs, providing a <br>comprehensive guide for enthusiasts and participants alike.</p>
 
-          <div class="flex justify-between mb-6">
+          <div class="flex flex-col lg:flex-row mx-2 gap-5 mb-6">
 
             <!-- Program Card - 1  -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full bg-[#13131880]">
-              <figure><img src="./Images/2.png" alt="" /></figure>
+            <div class="bg-no-repeat bg-cover card bg-base-100 shadow-xl image-full bg-[#13131880]">
+              <figure><img class="w-full" src="./Images/2.png" alt="" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-white text-2xl font-extrabold">Junior Program</h2>
                 <p class="text-inherit font-medium text-base leading-7">Explore our dynamic Junior Program, fostering young talent through engaging training sessions and skill development activities.</p>
@@ -221,9 +221,10 @@
                 </div>
               </div>
             </div>
+            
 
             <!-- Program Card- 2  -->
-            <div class="card w-96 bg-base-100 shadow-xl image-full bg-[#13131880]">
+            <div class="card bg-base-100 shadow-xl image-full bg-[#13131880]">
               <figure><img src="./Images/3.png" alt="" /></figure>
               <div class="card-body">
                 <h2 class="card-title text-white text-2xl font-extrabold">Teenager Program</h2>
@@ -236,8 +237,8 @@
           </div>
 
           <!-- Program Card-3  -->
-          <div class="card w-96 bg-base-100 shadow-xl image-full bg-[#13131880]">
-            <figure><img src="./Images/4.png" alt="" /></figure>
+          <div class="card bg-base-100 shadow-xl image-full bg-[#13131880] mx-2">
+            <figure><img class="w-full" src="./Images/4.png" alt="" /></figure>
             <div class="card-body">
               <h2 class="card-title text-white text-2xl font-extrabold">Professional Program</h2>
               <p class="text-inherit font-medium text-base leading-7">Elevate your game in our elite Professional Program, where top-tier coaching and advanced training ensure peak performance.</p>
@@ -259,7 +260,7 @@
         </div>
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
             <!-- card 1 -->
-            <div class="flex  p-4 gap-10 border border-gray-200">
+            <div class="flex p-4 gap-10 border border-gray-200">
                 <div>
                     <img src="./Images/5.png" alt="">
                 </div>
@@ -450,14 +451,75 @@
        </section>
 
        <!-- Get IN Touch  -->
-       <div>
-        <div>
-          <h3 class="text-center text-3xl text-black font-extrabold mt-24">Get In Touch</h3>
-          <p class="text-center text-inherit font-medium text-base leading-7 mt-7 mb-20 mx-2">Have questions or ready to join the hockey action? Get in touch!<br> Our team is here to assist you enthusiastically.</p>
+       <section class="container mx-auto">
+        <div class="text-center mb-10">
+            <h3 class="text-center text-3xl text-black font-extrabold mt-24">Get In Touch</h3>
+            <p class="text-inherit font-medium text-base leading-7 mt-7 mb-20 mx-2">Have questions or ready to join the hockey action? Get in touch!<br> Our team is here to assist you enthusiastically.</p>
         </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2  gap-10">
+            <div class="border p-10 rounded-lg space-y-20">
+                <!-- phone -->
+                <div class="bg-[#BCED6D19] p-5 mb-6 space-y-2">
+                    <img src="./Images/phn.png" alt="">
 
+                    <p class="text-black font-bold text-sm"><span class="font-light">phone number</span>
+                        <br>(+62) 123-321-543
+                    </p>
+                </div>
+                <!-- msg -->
+                <div class="bg-[#FDDD5F1A] p-5 mb-6 space-y-2">
+                    <img src="./Images/email.png" alt="">
 
-        <div>
+                    <p class="text-black font-bold text-sm"><span class="font-light">Email : </span><br>
+                        hockeys@support.com</p>
+                </div>
+                <!-- map -->
+                <div class="bg-[#629CF31A] p-5 mb-6 space-y-2">
+                    <img src="./Images/map.png" alt="">
+
+                    <p class="text-black font-bold text-sm"><span class="font-light">Location : </span><br>
+                        152/1 Mohakhali Wireless Gate</p>
+                </div>
+
+            </div>
+            <!--  -->
+            <div class="border rounded-lg p-10">
+                <form>
+                    <!-- 1 -->
+                    <div class="flex flex-col lg:flex-row gap-10 mb-10">
+                        <div>
+                            <label class="text-black font-bold text-sm" for="">Your Name</label> <br>
+                            <input class=" w-full p-3 bg-[#13131808] rounded-lg" type="text" placeholder="Enter your full name" name="" id="">
+                        </div>
+                        <div>
+                            <label class="text-black font-bold text-sm" for="">Your Email</label><br>
+                            <input class="w-full p-3 bg-[#13131808] rounded-lg" type="text" placeholder="Enter your full email" name="" id="">
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="flex flex-col lg:flex-row gap-10 mb-10">
+                        <div>
+                            <label class="text-black font-bold text-sm" for="">Subject</label> <br>
+                            <input class="w-full p-3 bg-[#13131808] rounded-lg" type="text" placeholder="Enter your subject" name="" id="">
+                        </div>
+                        <div>
+                            <label class="text-black font-bold text-sm" for="">Phone Number</label><br>
+                            <input class="w-full p-3 bg-[#13131808] rounded-lg" type="number" placeholder="Enter your phone number" name="" id="">
+                        </div>
+                    </div>
+                    <!-- 3 -->
+                    <div class="mb-10">
+                        <label class="text-black font-bold text-sm" for="">Message</label><br>
+                        <textarea class="p-3 bg-[#13131808] rounded-lg w-full" placeholder="Write your message" name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div>
+                        <button class="w-full bg-[#FF4240] border rounded-lg p-2 text-white font-bold">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Social Media  -->
+        <div class="mt-10">
           <h4 class="text-black text-2xl font-extrabold text-center">Social Media</h4>
           <div class="flex justify-center gap-x-9 text-black my-5">
           <div><i class="fa-brands fa-twitter"></i></div>
@@ -465,8 +527,7 @@
           <div><i class="fa-brands fa-instagram"></i></div>
           <div><i class="fa-brands fa-github"></i></div>
         </div>
-        </div>
-       </div>
+    </section>
     </main>
 
      <!-- Footer  -->
